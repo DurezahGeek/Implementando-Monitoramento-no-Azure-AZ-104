@@ -39,17 +39,17 @@ Queremos monitorar a exclusão da máquina virtual `az104-11-vm0` no Azure. Para
 ### 🔹 Etapa 2: Fazer o Deploy do Template JSON
 
 1. No portal, pesquise por **“Custom deployment”**
-![imagem5](https://github.com/DurezahGeek/Implementando-Monitoramento-no-Azure-AZ-104/blob/main/src-Monitoramento/5.png)
+- ![imagem5](https://github.com/DurezahGeek/Implementando-Monitoramento-no-Azure-AZ-104/blob/main/src-Monitoramento/5.png)
 2. Clique em **"Build your own template in the editor"**
-![imagem6](https://github.com/DurezahGeek/Implementando-Monitoramento-no-Azure-AZ-104/blob/main/src-Monitoramento/6.png)
+- ![imagem6](https://github.com/DurezahGeek/Implementando-Monitoramento-no-Azure-AZ-104/blob/main/src-Monitoramento/6.png)
 3. Clique em **upload file** e faça upload do arquivo `template.json` (pasta `az-104` do seu repositório)
-![imagem7](https://github.com/DurezahGeek/Implementando-Monitoramento-no-Azure-AZ-104/blob/main/src-Monitoramento/7.png)
+- ![imagem7](https://github.com/DurezahGeek/Implementando-Monitoramento-no-Azure-AZ-104/blob/main/src-Monitoramento/7.png)
 4. Clique em **Save**
-![imagem8](https://github.com/DurezahGeek/Implementando-Monitoramento-no-Azure-AZ-104/blob/main/src-Monitoramento/8.png)
+- ![imagem8](https://github.com/DurezahGeek/Implementando-Monitoramento-no-Azure-AZ-104/blob/main/src-Monitoramento/8.png)
 5. Preencha:
    - **Resource Group**: `az104-rg11`
    - **Admin Username e Password**
-![imagem9](https://github.com/DurezahGeek/Implementando-Monitoramento-no-Azure-AZ-104/blob/main/src-Monitoramento/9.png)
+- ![imagem9](https://github.com/DurezahGeek/Implementando-Monitoramento-no-Azure-AZ-104/blob/main/src-Monitoramento/9.png)
 6. Clique em **Review + Create > Create**
 
 > 💡 Isso criará toda a infraestrutura necessária para o monitoramento.
@@ -60,16 +60,16 @@ Queremos monitorar a exclusão da máquina virtual `az104-11-vm0` no Azure. Para
 
 1. Pesquise por **“Monitor”**
 2. Acesse **Virtual Machines Insights**
-![imagem10](https://github.com/DurezahGeek/Implementando-Monitoramento-no-Azure-AZ-104/blob/main/src-Monitoramento/10.png)
+- ![imagem10](https://github.com/DurezahGeek/Implementando-Monitoramento-no-Azure-AZ-104/blob/main/src-Monitoramento/10.png)
 3. Localize a VM `az104-11-vm0` (deve aparecer como *não monitorada*)
 4. Clique em **Enable**
-![imagem11](https://github.com/DurezahGeek/Implementando-Monitoramento-no-Azure-AZ-104/blob/main/src-Monitoramento/11.png)
+- ![imagem11](https://github.com/DurezahGeek/Implementando-Monitoramento-no-Azure-AZ-104/blob/main/src-Monitoramento/11.png)
 5. Clique em **Enable** novamente
-![imagem12](https://github.com/DurezahGeek/Implementando-Monitoramento-no-Azure-AZ-104/blob/main/src-Monitoramento/12.png)
+- ![imagem12](https://github.com/DurezahGeek/Implementando-Monitoramento-no-Azure-AZ-104/blob/main/src-Monitoramento/12.png)
 6. Clique em **Configure** (sem alterar nada)
-![imagem13](https://github.com/DurezahGeek/Implementando-Monitoramento-no-Azure-AZ-104/blob/main/src-Monitoramento/13.png)
+- ![imagem13](https://github.com/DurezahGeek/Implementando-Monitoramento-no-Azure-AZ-104/blob/main/src-Monitoramento/13.png)
 7. Aguarde a instalação do agente
-![imagem14](https://github.com/DurezahGeek/Implementando-Monitoramento-no-Azure-AZ-104/blob/main/src-Monitoramento/14.png)
+- ![imagem14](https://github.com/DurezahGeek/Implementando-Monitoramento-no-Azure-AZ-104/blob/main/src-Monitoramento/14.png)
 ---
 
 ### 🔹 Etapa 4: Criar Regra de Alerta
