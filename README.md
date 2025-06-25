@@ -26,7 +26,7 @@ Queremos monitorar a exclusão da máquina virtual `az104-11-vm0` no Azure. Para
 1. No portal do Azure, vá para **"Resource groups"**
 ![imagem2](https://github.com/DurezahGeek/Implementando-Monitoramento-no-Azure-AZ-104/blob/main/src-Monitoramento/2.png)
 2. Clique em **"Criar"**
-![imagem3](https://github.com/DurezahGeek/Implementando-Monitoramento-no-Azure-AZ-104/blob/main/src-Monitoramento/3.png)
+- ![imagem3](https://github.com/DurezahGeek/Implementando-Monitoramento-no-Azure-AZ-104/blob/main/src-Monitoramento/3.png)
 3. Preencha:
    - **Subscription**
    - **Resource Group Name**: `az104-rg11`
