@@ -75,17 +75,22 @@ Queremos monitorar a exclusão da máquina virtual `az104-11-vm0` no Azure. Para
 ### 🔹 Etapa 4: Criar Regra de Alerta
 
 1. No painel do **Monitor**, vá até **Alerts**
+- ![imagem15](https://github.com/DurezahGeek/Implementando-Monitoramento-no-Azure-AZ-104/blob/main/src-Monitoramento/15.png)
 2. Clique em **Create > Alert rule**
+- ![imagem16](https://github.com/DurezahGeek/Implementando-Monitoramento-no-Azure-AZ-104/blob/main/src-Monitoramento/16.png)
 3. Escolha o **Resource Group `az104-rg11`** como escopo
+- ![imagem17](https://github.com/DurezahGeek/Implementando-Monitoramento-no-Azure-AZ-104/blob/main/src-Monitoramento/17.png)
 4. Clique em **Aplicar**
-
+- ![imagem18](https://github.com/DurezahGeek/Implementando-Monitoramento-no-Azure-AZ-104/blob/main/src-Monitoramento/18.png)
 ---
 
 ### 🔹 Etapa 5: Definir Condição
 
 1. Em **Condition**, clique em **"See all signals"**
+- ![imagem19](https://github.com/DurezahGeek/Implementando-Monitoramento-no-Azure-AZ-104/blob/main/src-Monitoramento/19.png)
 2. Pesquise e selecione **"Delete Virtual Machine"**, ou use a seguinte consulta KQL:
-
+- ![imagem20](https://github.com/DurezahGeek/Implementando-Monitoramento-no-Azure-AZ-104/blob/main/src-Monitoramento/20.png)
+  ou
 ```kusto
 AzureActivity 
 | where OperationNameValue == "Microsoft.Compute/virtualMachines/delete"
@@ -95,22 +100,27 @@ AzureActivity
 ### 🔹 Etapa 6: Criar Grupo de Ação
 
 1. Em Action, selecione Use existing ou Create Action Group
+- ![imagem21](https://github.com/DurezahGeek/Implementando-Monitoramento-no-Azure-AZ-104/blob/main/src-Monitoramento/21.png)
 2. Preencha:
    - Resource Group: az104-rg11
    -  Region
    -  Action Group Name e Display Name
+- ![imagem22](https://github.com/DurezahGeek/Implementando-Monitoramento-no-Azure-AZ-104/blob/main/src-Monitoramento/22.png)
 3. Em Notifications, selecione:
   - Email/SMS/Push/Voice
   - Nome da notificação
   - Clique no lápis ✏️ e insira seu e-mail
+- ![imagem23](https://github.com/DurezahGeek/Implementando-Monitoramento-no-Azure-AZ-104/blob/main/src-Monitoramento/23.png)
 4. Aba Actions: não precisa configurar nada agora
 5. Tags: opcionais
 6. Clique em Review + Create > Create
-
+- ![imagem24](https://github.com/DurezahGeek/Implementando-Monitoramento-no-Azure-AZ-104/blob/main/src-Monitoramento/24.png)
 ### 🔹 Etapa 7: Testar o Alerta
 1. Vá até a VM az104-11-vm0 no Resource Group
 2. Clique em Delete
+- ![imagem25](https://github.com/DurezahGeek/Implementando-Monitoramento-no-Azure-AZ-104/blob/main/src-Monitoramento/25.png)
 3. A exclusão da VM acionará o alerta configurado
 4. Verifique:
    - Seu e-mail para a notificação
    - O menu Monitor > Alerts
+- ![imagem26](https://github.com/DurezahGeek/Implementando-Monitoramento-no-Azure-AZ-104/blob/main/src-Monitoramento/26.png)
