@@ -39,7 +39,7 @@ Queremos monitorar a exclusão da máquina virtual `az104-11-vm0` no Azure. Para
 ### 🔹 Etapa 2: Fazer o Deploy do Template JSON
 
 1. No portal, pesquise por **“Custom deployment”**
-- ![imagem5](https://github.com/DurezahGeek/Implementando-Monitoramento-no-Azure-AZ-104/blob/main/src-Monitoramento/5.png)
+- ![imagem0](https://github.com/DurezahGeek/Implementando-Monitoramento-no-Azure-AZ-104/blob/main/src-Monitoramento/0.png)
 2. Clique em **"Build your own template in the editor"**
 - ![imagem6](https://github.com/DurezahGeek/Implementando-Monitoramento-no-Azure-AZ-104/blob/main/src-Monitoramento/6.png)
 3. Clique em **upload file** e faça upload do arquivo `template.json` (pasta `az-104` do seu repositório)
